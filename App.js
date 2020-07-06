@@ -1,12 +1,18 @@
 import * as React from "react";
-import { View, Text, TextInput, Platform } from "react-native";
+import {
+  View,
+  Text,
+  TextInput,
+  Platform,
+  KeyboardAvoidingView,
+} from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Universal React with Expo</Text>
-
-      <TextInput placeholder="This is an input box" />
+      <Text style={[styles.largeText, styles.textStyle]}>San Francisco</Text>
+      <Text style={[styles.smallText, styles.textStyle]}>Light Cloud</Text>
+      <Text style={[styles.largeText, styles.textStyle]}>24°</Text>
     </View>
   );
 }
