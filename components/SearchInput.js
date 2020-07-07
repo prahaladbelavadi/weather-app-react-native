@@ -11,7 +11,8 @@ export default class SearchInput extends React.Component {
 
   handleChangeText = (newLocation) => {
     // this.props.location = newLocation;
-    this.setState({ text });
+    // console.log(this.state)
+    this.setState({ text: newLocation });
   };
 
   handleSubmitEditing = () => {
