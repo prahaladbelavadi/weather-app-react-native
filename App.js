@@ -18,7 +18,12 @@ import SearchInput from "./components/SearchInput";
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { location: "San Francisco" };
+    this.state = { location: "" };
+  }
+
+  componentDidMount(){
+    this.handleUpdateLocation('San Francisco')
+    console.log('Component has mounted')
   }
 
   handleUpdateLocation = (city) => {
